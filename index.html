@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Persegi Modern</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-card">
+        <div class="calculator-header">
+          <h1>Kalkulator Persegi</h1>
+          <p>Hitung luas dan keliling persegi dengan mudah</p>
+        </div>
+        <div class="calculator-body">
+          <div class="input-group">
+            <label for="sisi">Panjang Sisi</label>
+            <div class="input-container">
+              <input
+                type="number"
+                id="sisi"
+                placeholder="Masukkan panjang sisi"
+                min="0"
+                step="0.1"
+              />
+              <span class="unit">cm</span>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="hitungLuas">Hitung Luas</button>
+            <button id="hitungKeliling">Hitung Keliling</button>
+            <button id="reset">Reset</button>
+          </div>
+
+          <div class="results">
+            <div class="result-box" id="luasResult">
+              <div class="result-title">Luas Persegi</div>
+              <div class="result-value">
+                -<span class="result-unit">cm²</span>
+              </div>
+            </div>
+            <div class="result-box" id="kelilingResult">
+              <div class="result-title">Keliling Persegi</div>
+              <div class="result-value">
+                -<span class="result-unit">cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="explanation">
+        <h2>Rumus Persegi</h2>
+        <div class="formula-container">
+          <div class="formula-box">
+            <div class="formula-title">Luas Persegi</div>
+            <div class="formula">L = s × s</div>
+            <div class="formula-desc">
+              Luas persegi dihitung dengan mengalikan panjang sisi dengan sisi
+              itu sendiri.
+            </div>
+          </div>
+          <div class="formula-box">
+            <div class="formula-title">Keliling Persegi</div>
+            <div class="formula">K = 4 × s</div>
+            <div class="formula-desc">
+              Keliling persegi dihitung dengan menjumlahkan keempat sisinya,
+              atau mengalikan panjang sisi dengan 4.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 Kalkulator Persegi Modern |
+        <b>Create By Redi Elwaji Aspan</b>
+      </div>
+    </div>
+
+    <script src="js/function.js"></script>
+  </body>
+</html>
